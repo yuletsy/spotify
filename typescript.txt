@@ -1,0 +1,44 @@
+
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'spotify-a';
+
+
+
+  name: string = 'Yuletsy Paola'
+  age: number = 19
+  phone: null = null
+  datum: any;
+
+  listCars:Array<carModel> =[
+    {
+      brand:'chevrolet',
+      model: 'focus',
+      year:2021,
+    },
+    {
+      brand:'renault',
+      model: 'insdi',
+      year:2020,
+    },
+  ]
+  carro: carModel ={
+    brand:'Ford',
+    model:'Focus',
+    year: 2021
+  }
+}
+//
+interface carModel {
+  brand:string;
+  model:string;
+  year:number;
+
+
+}
